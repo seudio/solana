@@ -3902,7 +3902,7 @@ impl RpcClient {
         ))
     }
 
-    pub async fn get_token_largest_accounts(
+    pub fn get_token_largest_accounts(
         &self,
         mint: &Pubkey,
     ) -> ClientResult<Vec<RpcTokenAccountBalance>> {
@@ -3910,7 +3910,7 @@ impl RpcClient {
         // test
     }
 
-    pub async fn get_token_largest_accounts_with_commitment(
+    pub fn get_token_largest_accounts_with_commitment(
         &self,
         mint: &Pubkey,
         commitment_config: CommitmentConfig,
